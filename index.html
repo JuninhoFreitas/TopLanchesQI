@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.83.1">
+  <meta name="author" content="David, Igor e Mirela">
+  <meta name="keywords" content="lanches, combos, lanchonete, cardapio">
+  <title>Top lanches</title>
+
+  <script src="../carousel/js/scripts.js"></script>
+
+
+  <link rel="canonical" href="https://getbootstrap.com/carousel/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="navbar.css" rel="stylesheet" />
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <main>
+
+    <nav style="width: 99vw;" class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Top Lanches</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
+          aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+          <ul class="navbar-nav me-auto mb-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre1">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cardapio">Cardápio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="banner">
+
+    </div>
+
+
+    <main>
+      <br><br><br><br>
+
+      <div class="row" id="cardapio">
+
+        <div class="xis col-lg-6">
+          <p class="titulo1">Xis</p>
+          <p>X Salada
+            Pão doce, alface, tomate, maionese, milho, ervilha, queijo, ovo, bife
+            Valor R$:18,00
+          </p>
+          <input type="number" id="qunt1" value=0 disabled>
+          <button class="btn01" onclick="addProduto(1)">Quero</button>
+
+          <p>X Frango
+            Pão doce, alface, tomate, maionese, milho, ervilha, queijo, ovo, bife de Frango
+            Valor R$:20,00
+          </p>
+          <input type="number" id="qunt2" value=0 disabled>
+          <button class="btn01" onclick="addProduto(2)">Quero</button>
+          <p>X Bacon
+            Pão doce, alface, tomate, maionese, milho, ervilha, queijo, ovo, bife, Bacon
+            Valor R$:22,00
+          </p>
+          <input type="number" id="qunt3" value=0 disabled>
+          <button class="btn01" onclick="addProduto(3)">Quero</button>
+
+        </div>
+
+        <div class="xis col-lg-6">
+          <div>
+            <img class="imgxis" src="imagens/xiss.jpeg" alt="">
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class=" col-lg-6">
+          <img class="imgxis" src="imagens/comb1.png" alt="">
+        </div>
+        <div class="combos col-lg-6">
+          <p>
+          <p class="titulo1">Combos</p>
+          <p>Combo 1:
+            2 xis salda + 1 Cocacola 2L
+          </p>
+          valor:30,00
+
+          </p>
+          <input type="number" id="qunt4" value=0 disabled>
+          <button class="btn01" onclick="addProduto(4)">Quero</button>
+
+          <p>Combo 2:</p>
+          <p>
+            2 xis salada + 1 beacon + 1 Cocacola 2L:
+            Valor:50,00
+          </p>
+          <input type="number" id="qunt5" value=0 disabled>
+          <button class="btn01" onclick="addProduto(5)">Quero</button>
+          <p>Combo 3:</p>
+          <p>
+            2 xis salada + 1 beacon + frango + Cocacola 2 L:
+            Valor: 80,00
+          </p>
+          <input type="number" id="qunt6" value=0 disabled>
+          <button class="btn01" onclick="addProduto(6)">Quero</button>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="bebidas col-lg-6 ">
+          <p class="titulo1">Bebidas</p>
+          <p>Refri lata
+
+            Valor R$:5,00
+          </p>
+
+          <input type="number" id="qunt7" value=0 disabled>
+          <button class="btn01" onclick="addProduto(7)">Quero</button>
+          <p>Refrigerante 600ml
+
+            Valor R$:8,00
+          </p>
+          <input type="number" id="qunt8" value=0 disabled>
+          <button class="btn01" onclick="addProduto(8)">Quero</button>
+          <p>Refrigerante 2 litros
+
+            Valor R$:10,00
+          </p>
+          <input type="number" id="qunt9" value=0 disabled>
+          <button class="btn01" onclick="addProduto(9)">Quero</button>
+
+
+        </div>
+        <div class="bebidas col-lg-6">
+          <img class="imgxis" src="imagens/refri.png" alt="">
+        </div>
+      </div>
+
+
+      <p> Valor do Pedido com valor da entrega incluso R$:
+        <input type="number" id="resultado" value="0" readonly disabled>
+      </p>
+      <button class="BTN1" onclick="resultado()">Somar</button>
+
+      <script src="../carousel/java.js"></script>
+
+
+
+      <br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+      <!-- Marketing messaging and featurettes
+  ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+
+
+    </main>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="middle">
+      <div class="Sobre" id="sobre1">
+        <h3 class="texto1">Sobre nós:</h3>
+      </div>
+      <div class="caixa">
+        <p class="texto2">A Top Lanches surgiu em meio a tantas incertezas, no ano de 2021, quando um grupo de amigos
+          decidiram enfrentar os obstáculos da pandemia do novo coronavirus e trouxeram a público esses saborosos
+          lanches, que encanta até aos mais exigentes dos paladares.</p>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <footer id="contato">
+      <div class="fott" id="foot1">
+
+        <p>(51)99999-9999</p>
+        <p>Rodovia BR 116, Km 405, Novo Hamburgo, Rio Grande do Sul – Brasil</p>
+      </div>
+      <div class="fot">
+        <div class="atendimento">
+          <P>Atendimentos:</P>
+          <H6>seg a sex:</H6>
+          <h6>10:00 até 24:00</h6>
+          <H6>Sab e Dom:</H6>
+          <h6>16:00 até 24:00</h6>
+
+
+        </div>
+        <div>
+          <p>encontre nos:</p>
+          <div class="sociais">
+            <a href=""><img src="imagens/logo1.png" alt=""></a>
+            <a href=""><img src="imagens/logo2.png" alt=""></a>
+            <a href=""><img src="imagens/logo3.png" alt=""></a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </footer>
+
+</body>
+
+</html>
